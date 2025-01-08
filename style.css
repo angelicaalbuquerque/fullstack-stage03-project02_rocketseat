@@ -16,3 +16,12 @@
   --accent-pink: #e5245e;
   --accent-purple: #591b98;
 }
+
+body {
+  background-color: var(--background-default);
+}
+
+#page {
+  width: 1120px;
+  margin: 88px auto 65px;
+}
