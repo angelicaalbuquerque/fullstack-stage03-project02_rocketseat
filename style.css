@@ -51,6 +51,11 @@ h2 {
   padding-top: 20px;
 }
 
+section img {
+  border-radius: 28px;
+  width: 100%;
+}
+
 #description-image {
   margin: 40px 0;
 }
@@ -77,4 +82,9 @@ h2 {
 
 footer {
   text-align: center;
+  padding: 65px 0 48px; 
+}
+
+footer img {
+  vertical-align: middle;
 }
