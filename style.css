@@ -25,13 +25,14 @@ body {
 
 #page {
   width: 1120px;
-  margin: 88px auto 65px;
+  margin: 88px auto 0;
 }
 
 .headline {
   color: var(--text-headline);
   text-transform: uppercase;
   font-weight: 700;
+  margin: 0;
 }
 
 h1,
@@ -39,6 +40,7 @@ h2 {
   color: var(--text-primary);
   font-weight: 700;
   line-height: 150%;
+  margin: 0;
 }
 
 h1 {
@@ -48,7 +50,11 @@ h1 {
 
 h2 {
   font-size: 28px;
-  padding-top: 20px;
+  padding: 20px 0 4px;
+}
+
+.headline + h2 {
+  padding: 2px 0 8px;
 }
 
 section img {
@@ -63,6 +69,7 @@ section img {
 #description-image p {
   font-style: italic;
   text-align: center;
+  padding-top: 24px;
 }
 
 .divider {
@@ -72,24 +79,38 @@ section img {
   background-color: var(--border-primary);
 }
 
-#content-list {
+#content-intro {
   padding: 24px 0 64px;
 }
 
-p + p, ul li {
+section + section {
+  padding: 48px 0 0;
+}
+
+p {
+  margin: 0;
+}
+
+p + p,
+ul li {
   font-weight: bold;
 }
 
-/* ul {
+p + p {
+  margin-top: 16px;
+}
+
+ul {
+  margin: 0;
   padding-left: 24px;
-} */
+}
 
 ul li::marker {
   color: var(--text-secondary);
 }
 
 .history {
-  color: var(--accent-blue); 
+  color: var(--accent-blue);
 }
 
 .couple {
@@ -105,12 +126,13 @@ ul li::marker {
 }
 
 .divider + p {
+  padding-top: 0;
   text-align: center;
 }
 
 footer {
   text-align: center;
-  padding: 65px 0 48px; 
+  padding: 65px 0 48px;
 }
 
 footer img {
