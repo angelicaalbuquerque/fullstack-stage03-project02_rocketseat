@@ -76,6 +76,34 @@ section img {
   padding: 24px 0 64px;
 }
 
+p + p, ul li {
+  font-weight: bold;
+}
+
+/* ul {
+  padding-left: 24px;
+} */
+
+ul li::marker {
+  color: var(--text-secondary);
+}
+
+.history {
+  color: var(--accent-blue); 
+}
+
+.couple {
+  color: var(--accent-purple);
+}
+
+.family {
+  color: var(--accent-pink);
+}
+
+.budget {
+  color: var(--accent-orange);
+}
+
 .divider + p {
   text-align: center;
 }
